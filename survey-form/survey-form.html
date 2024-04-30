@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>formularioPesquisa</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>  
+    <body>
+      <h1 id="title">Formulário de Pesquisa - Consumo de Refrigerante</h1>
+      <p id="description"class="description">Obrigado por dedicar uma parte do seu tempo em responder esse formulário</p>
+      <form id="survey-form" method="post" class="form-group">
+        <fieldset>
+          <label id="name-label" for="name">Nome 
+            <input
+             id="name"
+             type="text"
+             name="name"
+             class="form-control"
+             placeholder="Digite seu nome"
+             required
+            >
+          </label>
+          <label id="email-label" for="email">E-mail 
+            <input
+            id="email"
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Digite seu e-mail"
+            required
+            >
+          </label>
+          <label id="number-label" for="number">Idade 
+            <input
+            id="number"
+            type="number"
+            min="12"
+            max="99"
+            class="form-control"
+            placeholder="Digite sua idade"
+            required
+            >
+          </label>
+          <p>Você consome refrigerante todos os dias?</p>
+          <select id="dropdown">
+            <option>Selecione uma opção</option>
+            <option>Sim</option>
+            <option>Não</option>
+        </fieldset>
+
+        <fieldset>
+          <legend>Qual tipo de refrigerante?</legend>
+          <label>
+            <input
+            type="radio"
+            name="comum"
+            value="comum"
+            class="input-radio"            
+            >Comum
+          </label>
+          <label>
+            <input
+            type="radio"
+            name="diet"
+            value="diet"
+            class="input-radio"
+            >Diet
+          </label>
+                    <label>
+            <input
+            type="radio"
+            name="comum"
+            value="comum"
+            class="input-radio"            
+            >Zero
+          </label>
+          <label>
+            <input
+            type="radio"
+            name="diet"
+            value="diet"
+            class="input-radio"
+            >Sem gluten
+          </label>
+        <fieldset>
+          <p>Qual marca de refrigerante abaixo você consome?</p>
+          <label>
+            <input
+            type="checkbox"
+            value="coca-cola"
+            class="input-checkbox"
+            > Coca-Cola
+          </label>
+          <label>
+            <input
+            type="checkbox"
+            value="pepsi"
+            class="input-checkbox"
+            > Pepsi
+          </label>
+          <label>
+            <input
+            type="checkbox"
+            value="guarana-antartica"
+            class="input-checkbox"
+            > Guaraná Antartica
+          </label>
+        <fieldset>
+          <p>Comentários Adicionais</p>
+          <textarea type="text id="comments" class="input-textarea" name="comment" placeholder="Digite seu comentário aqui...">
+          </textarea>
+        </fieldset>  
+        <input id= "submit" type="submit" value="submit" class="submit-button">  
+       </form>    
+    </body>  
+</html>
